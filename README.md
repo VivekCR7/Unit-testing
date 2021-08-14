@@ -1,7 +1,7 @@
 
 # Unit Testing
 
-This project continues the next part of the company master project which has been uploaded on the gitlab. This project will show the unit testing on the function that were used to solve problems in Company master project. Standard library of unittest is used to perform the TestCases
+This project continues the next part of the company master project which has been uploaded on the gitlab. This project will show the unit testing on the function that were used to solve problems in Company master project. Standard library of unit-test is used to perform the TestCases.
 
 <br>
 
