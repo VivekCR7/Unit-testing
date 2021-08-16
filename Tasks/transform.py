@@ -17,7 +17,7 @@ from csv import DictReader as d
 
 def get():
     updated_dataset = []
-    with open('/Users/vivekcr7/Desktop/projects/Company_Master/dataset/Maharashtra.csv',
+    with open('../dataset/Maharashtra.csv',
               'r', encoding='latin1') as csv_file:
         dataset = d(csv_file)
 
@@ -40,7 +40,7 @@ def get():
 
 def get_zip_district_dic():
     zip_district_arr = []
-    with open('/Users/vivekcr7/Desktop/projects/Company_Master/dataset/district_zip.csv',
+    with open('../dataset/district_zip.csv',
               'r', encoding="UTF-8") as csv_file:
         csv_reader = d(csv_file)
         for data in csv_reader:
