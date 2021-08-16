@@ -4,44 +4,28 @@
 """
 Approach:
 
-For this task we need to plot the bar plot for the number of registration vs district.
+For this task we need to plot the bar plot for the number
+of registration vs district.
 
-So, first I manually created the zipcode vs district .csv file, then created a function
-in which I converted that .csv file into a simple dictionary with the pincode as keys and
+So, first I manually created the zipcode vs district .csv
+file, then created a function in which I converted that .csv
+file into a simple dictionary with the pincode as keys and
 its corresponding district as values
 eg: {'pincode': 'district'}
 
-then I created one more helper funciton to short my large data cause we only need to work for
-the year 2015. I just iterated over my list of dictionary and created a dictionary for counting
-and looked for the year=2015 and the address pincode and counted the matching district.
+then I created one more helper funciton to short my large data
+cause we only need to work for the year 2015. I just iterated
+over my list of dictionary and created a dictionary for counting
+and looked for the year=2015 and the address pincode and counted
+the matching district.
 eg: {'district_for_year_2015': count}
 
 then I used one more function to plot the barplot using the
 """
-from csv import DictReader as d
-from transform import get
+from transform import get, get_zip_district_dic
 
 dataset = get()
 
-
-def get_zip_district_dic():
-    zip_district_arr = []
-    with open('/Users/vivekcr7/Desktop/projects/Company_Master/dataset/district_zip.csv',
-              'r', encoding="UTF-8") as csv_file:
-        csv_reader = d(csv_file)
-        for data in csv_reader:
-            zip_district_arr.append(data)
-
-    zip_district_dictionary = {}
-
-    for data in zip_district_arr:
-        if data['Pin Code'] not in zip_district_dictionary:
-            zip_district_dictionary[data['Pin Code']] = data['District']
-
-    return zip_district_dictionary
-
-
-# get_zip_distric_dic()
 
 def get_the_district_count(arr):
     zip_district = get_zip_district_dic()

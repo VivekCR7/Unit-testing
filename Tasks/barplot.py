@@ -4,14 +4,16 @@
 """
 Approach:
 
-For this task we just need to plot the bar plot of the company registrations vs year
-so, I just created a function get_the_dictionary(), and iterate over my dataset and
-retrieved the no.of company registered respective to the year, where year is key and
-the count is the values
+For this task we just need to plot the bar plot of the
+company registrations vs year so, I just created a function
+get_the_dictionary(), and iterate over my dataset and retrieved
+the no.of company registered respective to the year, where year
+is key and the count is the values
 eg: {"year":count"}
 
-after getting the dictionary I created one more function for plotting graph in which
-I used matplotlib's plt.bar() to plot the bar plot.
+after getting the dictionary I created one more function for
+plotting graph in which I used matplotlib's plt.bar() to plot
+the bar plot.
 
 """
 

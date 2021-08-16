@@ -3,23 +3,28 @@
 """
 Approach:
 
-For this task we needed to group plot the aggregating registered counts over year and
-principal activities for that I first counted the companies registration from year and
-from principal activity but for grouping them the array was uneven.
+For this task we needed to group plot the aggregating registered
+counts over year and principal activities for that I first counted
+the companies registration from year and from principal activity
+but for grouping them the array was uneven.
 
-so, I created a function to combined the counts of companies and the principal activity
-that is by creating a dictionary of dictionary with keys as years and the values as
-a dictionary with total counts and the principal activity counts respective to that year.
+so, I created a function to combined the counts of companies and
+the principal activity that is by creating a dictionary of dictionary
+with keys as years and the values as a dictionary with total counts
+and the principal activity counts respective to that year.
 
-for eg: {'year': {'Total':count,'principal_activity_1':count,'principal_activity_2':count}}
+for eg:
+    {'year': {'Total':count,'principal_activity_1':count,
+    'principal_activity_2':count}}
 and so on for rest of the years.
 
 but the principal_activities were repeating so I manually selected
 Total,Other,Manufacture,Construciton as the constant dictionaries keys
 for every year.
 
-with the help of the grouped_bar_plot() function I plotted the graph for [other,manufacture]
-group to look clean, we can add other parameters and group them as well.
+with the help of the grouped_bar_plot() function I plotted the graph
+for [other,manufacture] group to look clean, we can add other parameters
+and group them as well.
 
 """
 

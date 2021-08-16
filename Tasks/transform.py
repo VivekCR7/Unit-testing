@@ -4,12 +4,14 @@
 """
 Approach:
 
-I read the csv file with the help of DictReader from python csv library. Intially the data contains
-of around 4 lakhs rows which was a lot. so I tried to shortened my data and considered only last
-21 years of data from 2000 to 2021.
+I read the csv file with the help of DictReader from python
+csv library. Intially the data contains of around 4 lakhs rows
+which was a lot. so I tried to shortened my data and considered
+only last 21 years of data from 2000 to 2021.
 
-So, I just iterate over the my DictReader and look for the year. if year was between 2000 to 2001
-then I appended that row in my list of dictionary.
+So, I just iterate over the my DictReader and look for the year.
+if year was between 2000 to 2001 then I appended that row in my
+list of dictionary.
 """
 
 from csv import DictReader as d
@@ -31,7 +33,8 @@ def get():
                 else:
                     continue
 
-            # some date format was YYYY-MM-DD so it was giving ValueError so I skipped that row.
+            # some date format was YYYY-MM-DD so it was giving
+            # ValueError so I skipped that row.
             except ValueError:
                 continue
 

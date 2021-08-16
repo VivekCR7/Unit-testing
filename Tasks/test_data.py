@@ -60,9 +60,11 @@ class TestData(unittest.TestCase):
 
     def test_check_properties_in_year(self):
         self.assertEqual(data.check_properties_in_year(dictionary, 2000), {
-                         'Total': 8921, 'Other': 6982, 'Manufacture': 1557, 'Construction': 382})
+                         'Total': 8921, 'Other': 6982, 'Manufacture': 1557,
+                         'Construction': 382})
         self.assertEqual(data.check_properties_in_year(dictionary, 2012), {
-                         'Total': 17312, 'Other': 12541, 'Manufacture': 2911, 'Construction': 1860})
+                         'Total': 17312, 'Other': 12541, 'Manufacture': 2911,
+                         'Construction': 1860})
         self.assertEqual(data.check_properties_in_year(
             dictionary, 1927), "Invalid Year")
 

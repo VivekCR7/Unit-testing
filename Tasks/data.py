@@ -20,7 +20,8 @@ def year_array(arr, left, right):
     return year_arr
 
 
-# function to check if the district is getting printed respective to there pincode
+# function to check if the district is getting printed
+# respective to there pincode
 def check_district(arr, pincode):
     if pincode not in arr:
         return "Invalid Pincode"
