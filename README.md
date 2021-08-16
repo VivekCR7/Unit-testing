@@ -83,7 +83,7 @@ Check for the pep8 standard using flake8, if there is no error while running the
 To run the unit-testing file
 
 ```bash
-python3 test_data.py
+(venv) ~ python3 test_data.py
 ```
 
 ```bash
@@ -94,7 +94,7 @@ Ran 6 tests in 0.000s
 OK
 ```
 
-Above is the output of the unit testing.
+Above is the output of the unit testing.It shows that all the 6 tests has been passed.
 
 ## Author
 
