@@ -14,10 +14,10 @@ below is the link you can download the data from there.
 
 Two dataset has been used for this project:
 
-| Dataset | Link |
-| --- | --- |
+| Dataset                            | Link                         |
+| ---------------------------------- | ---------------------------- |
 | Company Master data of Maharashtra | https://tinyurl.com/94s2nax3 |
-| District vs zip data | https://tinyurl.com/39tauusa |
+| District vs zip data               | https://tinyurl.com/39tauusa |
 
 <br>
 
@@ -32,7 +32,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-~ cd unit-testing
+~ cd Unit-testing
 ```
 
 Make a directory dataset and then move the downloaded data in that directory using terminal or from gui.
