@@ -20,22 +20,16 @@ from csv import DictReader as d
 def get():
     updated_dataset = []
     with open('../dataset/Maharashtra.csv',
-              'r', encoding='latin1') as csv_file:
+              'r', encoding='utf-8') as csv_file:
         dataset = d(csv_file)
 
         for data in dataset:
-            try:
-                if data['DATE_OF_REGISTRATION'] == 'NA':
-                    continue
+            if data['DATE_OF_REGISTRATION'] == 'NA':
+                continue
 
-                if int(data['DATE_OF_REGISTRATION'][6:]) <= 21:
-                    updated_dataset.append(data)
-                else:
-                    continue
-
-            # some date format was YYYY-MM-DD so it was giving
-            # ValueError so I skipped that row.
-            except ValueError:
+            if 2000 <= int(data['DATE_OF_REGISTRATION'][0:4]) <= 2021:
+                updated_dataset.append(data)
+            else:
                 continue
 
     return updated_dataset

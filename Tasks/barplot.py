@@ -25,7 +25,7 @@ dataset = get()
 def get_the_dictionary(data):
     registration_dictionary = {}
     for ele in data:
-        date = int('20'+ele['DATE_OF_REGISTRATION'][6:])
+        date = int(ele['DATE_OF_REGISTRATION'][0:4])
         if date not in registration_dictionary:
             registration_dictionary[date] = 1
         else:

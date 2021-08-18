@@ -37,7 +37,7 @@ def get_the_combined_dictionary(arr):
     dictionary = {}
 
     for ele in arr:
-        year = int('20' + ele['DATE_OF_REGISTRATION'][6:])
+        year = int(ele['DATE_OF_REGISTRATION'][0:4])
         principal = ele['PRINCIPAL_BUSINESS_ACTIVITY_AS_PER_CIN']
 
         extracted_manufacturer_from_principal = principal[:11]

@@ -44,7 +44,7 @@ class TestData(unittest.TestCase):
 
     def test_check_count_for_companies(self):
         self.assertEqual(data.check_count_for_companies(
-            year, year_count, 2000), 8921)
+            year, year_count, 2000), 8920)
         self.assertEqual(data.check_count_for_companies(
             year, year_count, 2021), 7668)
         self.assertEqual(data.check_count_for_companies(
@@ -60,7 +60,7 @@ class TestData(unittest.TestCase):
 
     def test_check_properties_in_year(self):
         self.assertEqual(data.check_properties_in_year(dictionary, 2000), {
-                         'Total': 8921, 'Other': 6982, 'Manufacture': 1557,
+                         'Total': 8920, 'Other': 6982, 'Manufacture': 1556,
                          'Construction': 382})
         self.assertEqual(data.check_properties_in_year(dictionary, 2012), {
                          'Total': 17312, 'Other': 12541, 'Manufacture': 2911,

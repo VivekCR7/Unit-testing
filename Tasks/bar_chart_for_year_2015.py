@@ -32,7 +32,7 @@ def get_the_district_count(arr):
 
     district_count = {}
     for data in arr:
-        if int(data['DATE_OF_REGISTRATION'][6:]) != 15:
+        if int(data['DATE_OF_REGISTRATION'][0:4]) != 2015:
             continue
 
         address = data['Registered_Office_Address']

@@ -14,7 +14,7 @@ def year_array(arr, left, right):
         return "Impossible!!"
 
     for i in range(left, right+1):
-        date = int('20' + arr[i]["DATE_OF_REGISTRATION"][6:])
+        date = int(arr[i]["DATE_OF_REGISTRATION"][0:4])
         year_arr.append(date)
 
     return year_arr
