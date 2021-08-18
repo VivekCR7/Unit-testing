@@ -16,7 +16,7 @@ Two dataset has been used for this project:
 
 | Dataset                            | Link                         |
 | ---------------------------------- | ---------------------------- |
-| Company Master data of Maharashtra | https://tinyurl.com/94s2nax3 |
+| Company Master data of Maharashtra | https://tinyurl.com/3453m26x |
 | District vs zip data               | https://tinyurl.com/39tauusa |
 
 <br>
